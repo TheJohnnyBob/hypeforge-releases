@@ -12,6 +12,15 @@ Windows may say "Windows protected your PC" because the installer isn't code-sig
 
 Once it's installed, Hypeforge keeps itself up to date. It downloads new versions in the background, and you choose when to restart for them, so an update never interrupts a stream.
 
+## Privacy
+
+Hypeforge runs on your PC, and your settings, viewers and stream history stay there. It talks to Twitch for your channel and to GitHub to check for updates.
+
+It only sends anything to the developer when you ask it to:
+
+- **Report a problem** and **Request a feature** send what you write. A problem report can include diagnostics (versions, connection state, which settings are on, recent log lines), and you can see exactly what's included before sending. Viewer and channel names are always left out.
+- **Usage stats** are off unless you turn them on. Then Hypeforge sends one anonymous summary a day: a random ID for your copy (not linked to your Twitch account), the Hypeforge and Windows versions, which features are on, and counts like spins and connection drops. Never viewer or channel names, messages or punishments.
+
 ---
 
 This repository only holds Hypeforge's releases.
