@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 152 70" role="img" aria-label="Hypeforge">
+  <title>Hypeforge</title>
+  <!-- HF monogram: wide, sharp letters (the F's arms cut at an angle for forward motion) and
+       a launch-trajectory arc that sweeps under them and up past the F. Where the arc
+       crosses a letter, a thin gap is cut so it reads as passing through. -->
+  <defs>
+    <!-- Neon purple to neon light blue, across both letters and along the arc -->
+    <linearGradient id="hf-letters" x1="22" y1="0" x2="108" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b44dff"/>
+      <stop offset="0.45" stop-color="#7b6bff"/>
+      <stop offset="1" stop-color="#3ee8ff"/>
+    </linearGradient>
+    <linearGradient id="hf-arc" x1="8" y1="0" x2="152" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b44dff"/>
+      <stop offset="0.55" stop-color="#7b6bff"/>
+      <stop offset="1" stop-color="#3ee8ff"/>
+    </linearGradient>
+    <path id="hf-trajectory" d="M8 60C58 76 118 60 152 8C116 54 60 68 8 60Z"/>
+    <mask id="hf-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="160" height="80">
+      <rect width="160" height="80" fill="#fff"/>
+      <use href="#hf-trajectory" fill="#000" stroke="#000" stroke-width="5" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+
+  <g mask="url(#hf-gap)" fill="url(#hf-letters)">
+    <path d="M20 22h7v14.5h28V22h7v36h-7V43.5H27V58h-7z"/>
+    <path d="M72 22h40l-4.5 7H79v7.5h25l-4.5 7H79V58h-7z"/>
+  </g>
+  <use href="#hf-trajectory" fill="url(#hf-arc)"/>
+</svg>
